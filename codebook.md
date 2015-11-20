@@ -102,208 +102,211 @@ Column #                      Label 	Description
 2                            activity	Factor variable for Activity type. oded this as a six-level factor variable with level lables in the following set: 
 										{WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS,SITTING,STANDING,LAYING}
 
-3           tBodyAccelerometer.mean.X	Mean acceleration, body motion, x-axis. See Footnote A for units
+3           *tBodyAccelerometer.mean.X*	= Mean acceleration, body motion, x-axis. See Footnote A for units
   
-4           tBodyAccelerometer.mean.Y	Mean acceleration, body motion, y-axis. See footnote A for units 
+4           *tBodyAccelerometer.mean.Y*	= Mean acceleration, body motion, y-axis. See footnote A for units 
 
-5           tBodyAccelerometer.mean.Z	Mean acceleration, body motion, z-axis. See footnote A for units    
+5           *tBodyAccelerometer.mean.Z*	= Mean acceleration, body motion, z-axis. See footnote A for units    
 
-6        tGravityAccelerometer.mean.X	Mean acceleration, gravity motion, x-axis. See footnote A for units
+6        *tGravityAccelerometer.mean.X*	= Mean acceleration, gravity motion, x-axis. See footnote A for units
 
-7        tGravityAccelerometer.mean.Y	Mean acceleration, gravity motion, y-axis. See footnote A for units
+7        *tGravityAccelerometer.mean.Y*	= Mean acceleration, gravity motion, y-axis. See footnote A for units
 
-8        tGravityAccelerometer.mean.Z	Mean acceleration, gravity motion, z-axis. See footnote A for units
+8        *tGravityAccelerometer.mean.Z*	= Mean acceleration, gravity motion, z-axis. See footnote A for units
 
-9       tBodyAccelerometerJerk.mean.X	Mean jerk (derivative of acceleration), body motion, x-axis. See footnote A for units
+9       *tBodyAccelerometerJerk.mean.X*	= Mean jerk (derivative of acceleration), body motion, x-axis. See footnote A for units
 
-10      tBodyAccelerometerJerk.mean.Y	Mean jerk (derivative of acceleration), body motion, y-axis. See footnote A for units
+10      *tBodyAccelerometerJerk.mean.Y*	= Mean jerk (derivative of acceleration), body motion, y-axis. See footnote A for units
 
-11      tBodyAccelerometerJerk.mean.Z	Mean jerk (derivative of acceleration), body motion, z-axis. See footnote A for units
+11      *tBodyAccelerometerJerk.mean.Z*	= Mean jerk (derivative of acceleration), body motion, z-axis. See footnote A for units
 
-12              tBodyGyroscope.mean.X	Mean angular velocity, body motion, x-axis. See footnote B for units
+12              *tBodyGyroscope.mean.X*	= Mean angular velocity, body motion, x-axis. See footnote B for units
 
-13              tBodyGyroscope.mean.Y	Mean angular velocity, body motion, y-axis. See footnote B for units
+13              *tBodyGyroscope.mean.Y*	= Mean angular velocity, body motion, y-axis. See footnote B for units
 
-14              tBodyGyroscope.mean.Z	Mean angular velocity, body motion, z-axis. See footnote B for units
+14              *tBodyGyroscope.mean.Z*	= Mean angular velocity, body motion, z-axis. See footnote B for units
 
-15          tBodyGyroscopeJerk.mean.X	Mean jerk (derivative of angular velocity), body motion, x-axis. See footnote B for units
+15          *tBodyGyroscopeJerk.mean.X*	= Mean jerk (derivative of angular velocity), body motion, x-axis. See footnote B for units
 
-16          tBodyGyroscopeJerk.mean.Y	Mean jerk (derivative of angular velocity), body motion, y-axis. See footnote B for units
+16          *tBodyGyroscopeJerk.mean.Y*	= Mean jerk (derivative of angular velocity), body motion, y-axis. See footnote B for units
 
-17          tBodyGyroscopeJerk.mean.Z	Mean jerk (derivative of angular velocity), body motion, z-axis. See footnote B for units
+17          *tBodyGyroscopeJerk.mean.Z*	= Mean jerk (derivative of angular velocity), body motion, z-axis. See footnote B for units
 
-18         tBodyAccelerometerMag.mean	Mean magnitude of acceleration, body motion. See footnote A for units
+18         *tBodyAccelerometerMag.mean*	= Mean magnitude of acceleration, body motion. See footnote A for units
 
-19      tGravityAccelerometerMag.mean	Mean magnitude of acceleration, gravity motion. See footnote A for units
+19      *tGravityAccelerometerMag.mean*	= Mean magnitude of acceleration, gravity motion. See footnote A for units
 
-20     tBodyAccelerometerJerkMag.mean	Mean magnitude of jerk (derivative of acceleration), body motion. See footnote A for units
+20     *tBodyAccelerometerJerkMag.mean*	= Mean magnitude of jerk (derivative of acceleration), body motion. See footnote A for units
 
-21             tBodyGyroscopeMag.mean	Mean magnitude of jerk (derivative of acceleration), body motion. See footnote B for units
+21             *tBodyGyroscopeMag.mean*	= Mean magnitude of jerk (derivative of acceleration), body motion. See footnote B for units
 
-22         tBodyGyroscopeJerkMag.mean	Mean magnitude of jerk (derivative of acceleration), body motion. See footnote B for units
+22         *tBodyGyroscopeJerkMag.mean*	= Mean magnitude of jerk (derivative of acceleration), body motion. See footnote B for units
 
-23          fBodyAccelerometer.mean.X	Mean acceleration, frequency domain, body motion, x-axis. See footnote A for units
+23          *fBodyAccelerometer.mean.X*	= Mean acceleration, frequency domain, body motion, x-axis. See footnote A for units
 
-24          fBodyAccelerometer.mean.Y	Mean acceleration, frequency domain, body motion, y-axis. See footnote A for units
+24           *fBodyAccelerometer.mean.Y*	= Mean acceleration, frequency domain, body motion, y-axis. See footnote A for units
 
-25          fBodyAccelerometer.mean.Z	Mean acceleration, frequency domain, body motion, z-axis. See footnote A for units
+25           *fBodyAccelerometer.mean.Z*	= Mean acceleration, frequency domain, body motion, z-axis. See footnote A for units
 
-26      fBodyAccelerometerJerk.mean.X	Mean jerk (derivative of acceleration), frequency domain, body motion, x-axis. See footnote A for units
+26       *fBodyAccelerometerJerk.mean.X*	= Mean jerk (derivative of acceleration), frequency domain, body motion, x-axis. See footnote A for units
 
-27      fBodyAccelerometerJerk.mean.Y	Mean jerk (derivative of acceleration), frequency domain, body motion, y-axis. See footnote A for units
+27       *fBodyAccelerometerJerk.mean.Y*	= Mean jerk (derivative of acceleration), frequency domain, body motion, y-axis. See footnote A for units
 
-28      fBodyAccelerometerJerk.mean.Z	Mean jerk (derivative of acceleration), frequency domain, body motion, z-axis. See footnote A for units
+28       *fBodyAccelerometerJerk.mean.Z*	= Mean jerk (derivative of acceleration), frequency domain, body motion, z-axis. See footnote A for units
 
-29              fBodyGyroscope.mean.X	Mean angular velocity, body motion, frequency domain, x-axis. See footnote B for units
+29               *fBodyGyroscope.mean.X*	= Mean angular velocity, body motion, frequency domain, x-axis. See footnote B for units
 
-30              fBodyGyroscope.mean.Y	Mean angular velocity, body motion, frequency domain, y-axis. See footnote B for units
+30               *fBodyGyroscope.mean.Y*	= Mean angular velocity, body motion, frequency domain, y-axis. See footnote B for units
 
-31              fBodyGyroscope.mean.Z	Mean angular velocity, body motion, frequency domain, z-axis. See footnote B for units
+31               *fBodyGyroscope.mean.Z*	= Mean angular velocity, body motion, frequency domain, z-axis. See footnote B for units
 
-32         fBodyAccelerometerMag.mean	Mean magnitude of acceleration, frequency domain, body motion. See footnote A for units
+32          *fBodyAccelerometerMag.mean*	= Mean magnitude of acceleration, frequency domain, body motion. See footnote A for units
 
-33 fBodyBodyAccelerometerJerkMag.mean	Mean magnitude of jerk (derivative of acceleration), frequency domain, body motion. See footnote A for units
+33 fBodyBodyAccelerometerJerkMag.mean*	= Mean magnitude of jerk (derivative of acceleration), frequency domain, body motion. See footnote A for units
 
-34         fBodyBodyGyroscopeMag.mean	Mean magnitude of angular velocity, frequency domain, body motion. See footnote B for units
+34          *fBodyBodyGyroscopeMag.mean*	= Mean magnitude of angular velocity, frequency domain, body motion. See footnote B for units
 
-35     fBodyBodyGyroscopeJerkMag.mean	Mean magnitude jerk (derivative of angular velocity), frequency domain, body motion. See footnote B for units
+35      *fBodyBodyGyroscopeJerkMag.mean*	= Mean magnitude jerk (derivative of angular velocity), frequency domain, body motion. See footnote B for units
 
-36           tBodyAccelerometer.std.X	Std deviation acceleration, body motion, x-axis. See Footnote A for units
+36           *tBodyAccelerometer.std.X*	= Std deviation acceleration, body motion, x-axis. See Footnote A for units
 
-37           tBodyAccelerometer.std.Y	Std deviation acceleration, body motion, y-axis. See Footnote A for units
+37           *tBodyAccelerometer.std.Y*	= Std deviation acceleration, body motion, y-axis. See Footnote A for units
 
-38           tBodyAccelerometer.std.Z	Std deviation acceleration, body motion, z-axis. See Footnote A for units
+38           *tBodyAccelerometer.std.Z*	= Std deviation acceleration, body motion, z-axis. See Footnote A for units
 
-39        tGravityAccelerometer.std.X	Std deviation acceleration, gravity motion, x-axis. See footnote A for units
+39        *tGravityAccelerometer.std.X*	= Std deviation acceleration, gravity motion, x-axis. See footnote A for units
 
-40        tGravityAccelerometer.std.Y	Std deviation acceleration, gravity motion, y-axis. See footnote A for units
+40        *tGravityAccelerometer.std.Y*	= Std deviation acceleration, gravity motion, y-axis. See footnote A for units
 
-41        tGravityAccelerometer.std.Z	Std deviation acceleration, gravity motion, z-axis. See footnote A for units
+41        *tGravityAccelerometer.std.Z*	= Std deviation acceleration, gravity motion, z-axis. See footnote A for units
 
-42       tBodyAccelerometerJerk.std.X	Std deviation jerk (derivative of acceleration), body motion, x-axis. See footnote A for units
+42       *tBodyAccelerometerJerk.std.X*	= Std deviation jerk (derivative of acceleration), body motion, x-axis. See footnote A for units
 
-43       tBodyAccelerometerJerk.std.Y	Std deviation jerk (derivative of acceleration), body motion, y-axis. See footnote A for units
+43       *tBodyAccelerometerJerk.std.Y*	= Std deviation jerk (derivative of acceleration), body motion, y-axis. See footnote A for units
 
-44       tBodyAccelerometerJerk.std.Z	Std deviation jerk (derivative of acceleration), body motion, z-axis. See footnote A for units
+44       *tBodyAccelerometerJerk.std.Z*	= Std deviation jerk (derivative of acceleration), body motion, z-axis. See footnote A for units
 
-45               tBodyGyroscope.std.X	Std deviation angular velocity, body motion, x-axis. See footnote B for units
+45               *tBodyGyroscope.std.X*	= Std deviation angular velocity, body motion, x-axis. See footnote B for units
 
-46               tBodyGyroscope.std.Y	Std deviation angular velocity, body motion, y-axis. See footnote B for units
+46               *tBodyGyroscope.std.Y*	= Std deviation angular velocity, body motion, y-axis. See footnote B for units
 
-47               tBodyGyroscope.std.Z	Std deviation angular velocity, body motion, z-axis. See footnote B for units
+47               *tBodyGyroscope.std.Z*	= Std deviation angular velocity, body motion, z-axis. See footnote B for units
 
-48           tBodyGyroscopeJerk.std.X	Std deviation jerk (derivative of angular velocity), body motion, x-axis. See footnote B for units
+48           *tBodyGyroscopeJerk.std.X*	= Std deviation jerk (derivative of angular velocity), body motion, x-axis. See footnote B for units
 
-49           tBodyGyroscopeJerk.std.Y	Std deviation jerk (derivative of angular velocity), body motion, y-axis. See footnote B for units
+49           *tBodyGyroscopeJerk.std.Y*	= Std deviation jerk (derivative of angular velocity), body motion, y-axis. See footnote B for units
 
-50           tBodyGyroscopeJerk.std.Z	Std deviation jerk (derivative of angular velocity), body motion, z-axis. See footnote B for units
+50           *tBodyGyroscopeJerk.std.Z*	= Std deviation jerk (derivative of angular velocity), body motion, z-axis. See footnote B for units
 
-51          tBodyAccelerometerMag.std	Std deviation magnitude acceleration, body motion. See footnote A for units
+51          *tBodyAccelerometerMag.std*	= Std deviation magnitude acceleration, body motion. See footnote A for units
 
-52       tGravityAccelerometerMag.std	Std deviation magnitude acceleration, body motion. See footnote A for units
+52       *tGravityAccelerometerMag.std*	= Std deviation magnitude acceleration, body motion. See footnote A for units
 
-53      tBodyAccelerometerJerkMag.std	Std deviation magnitude acceleration, body motion. See footnote A for units
+53      *tBodyAccelerometerJerkMag.std*	= Std deviation magnitude acceleration, body motion. See footnote A for units
 
-54              tBodyGyroscopeMag.std	Std deviation magnitude angular velocity, body motion. See footnote B for units
+54              *tBodyGyroscopeMag.std*	= Std deviation magnitude angular velocity, body motion. See footnote B for units
 
-55          tBodyGyroscopeJerkMag.std	Std deviation magnitude jerk (derivative of angular velocity), body motion. See footnote B for units
+55          *tBodyGyroscopeJerkMag.std*	= Std deviation magnitude jerk (derivative of angular velocity), body motion. See footnote B for units
 
-56           fBodyAccelerometer.std.X	Std deviation acceleration, frequency domain, body motion, x-axis. See footnote A for units
+56            *fBodyAccelerometer.std.X*	= Std deviation acceleration, frequency domain, body motion, x-axis. See footnote A for units
 
-57           fBodyAccelerometer.std.Y	Std deviation acceleration, frequency domain, body motion, y-axis. See footnote A for units
+57            *fBodyAccelerometer.std.Y*	= Std deviation acceleration, frequency domain, body motion, y-axis. See footnote A for units
 
-58           fBodyAccelerometer.std.Z	Std deviation acceleration, frequency domain, body motion, z-axis. See footnote A for units
+58            *fBodyAccelerometer.std.Z*	= Std deviation acceleration, frequency domain, body motion, z-axis. See footnote A for units
 
-59       fBodyAccelerometerJerk.std.X	Std deviation jerk (derivative of acceleration), frequency domain, body motion, x-axis. See footnote A for units
+59        *fBodyAccelerometerJerk.std.X*	= Std deviation jerk (derivative of acceleration), frequency domain, body motion, x-axis. See footnote A for units
 
-60       fBodyAccelerometerJerk.std.Y	Std deviation jerk (derivative of acceleration), frequency domain, body motion, y-axis. See footnote A for units
+60        *fBodyAccelerometerJerk.std.Y*	= Std deviation jerk (derivative of acceleration), frequency domain, body motion, y-axis. See footnote A for units
 
-61       fBodyAccelerometerJerk.std.Z	Std deviation jerk (derivative of acceleration), frequency domain, body motion, z-axis. See footnote A for units
+61        *fBodyAccelerometerJerk.std.Z*	= Std deviation jerk (derivative of acceleration), frequency domain, body motion, z-axis. See footnote A for units
 
-62               fBodyGyroscope.std.X	Std deviation angular velocity, frequency domain, body motion, x-axis. See footnote B for units
+62                *fBodyGyroscope.std.X*	= Std deviation angular velocity, frequency domain, body motion, x-axis. See footnote B for units
 
-63               fBodyGyroscope.std.Y	Std deviation angular velocity, frequency domain, body motion, y-axis. See footnote B for units
+63                *fBodyGyroscope.std.Y*	= Std deviation angular velocity, frequency domain, body motion, y-axis. See footnote B for units
 
-64               fBodyGyroscope.std.Z	Std deviation angular velocity, frequency domain, body motion, z-axis. See footnote B for units
+64                *fBodyGyroscope.std.Z*	= Std deviation angular velocity, frequency domain, body motion, z-axis. See footnote B for units
 
-65          fBodyAccelerometerMag.std	Std deviation magnitude acceleration, frequency domain, body motion. See footnote A for units
+65           *fBodyAccelerometerMag.std*	= Std deviation magnitude acceleration, frequency domain, body motion. See footnote A for units
 
-66  fBodyBodyAccelerometerJerkMag.std	Std deviation magnitude jerk (derivative of acceleration), frequency domain, body motion. See footnote A
+66   *fBodyBodyAccelerometerJerkMag.std*	= Std deviation magnitude jerk (derivative of acceleration), frequency domain, body motion. See footnote A
 
-67          fBodyBodyGyroscopeMag.std	Std deviation magnitude angular velocity, frequency domain, body motion. See footnote B
+67           *fBodyBodyGyroscopeMag.std*	= Std deviation magnitude angular velocity, frequency domain, body motion. See footnote B
 
-68      fBodyBodyGyroscopeJerkMag.std	Std deviation magnitude jerk (derivative of angular velocity), frequency domain, body motion. See footnote B
+68       *fBodyBodyGyroscopeJerkMag.std*	= Std deviation magnitude jerk (derivative of angular velocity), frequency domain, body motion. See footnote B
 
 Footnote A - units in standard gravity units 'g', normalized an bounded within interval [-1,1]
 
 Footnote B - units in radians/second, normalized an bounded within interval [-1,1]
 
+Footnote C - Factor variable with levels in {WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS,SITTING,STANDING,LAYING} 
+
 ## Appendix: Mappings between my tidy data column labels and the raw data column labels 
 
-my tidy data label                		raw data label
-tBodyAccelerometer.mean.X         		tBodyAcc-mean()-X
-tBodyAccelerometer.mean.Y         		tBodyAcc-mean()-Y
-tBodyAccelerometer.mean.Z         		tBodyAcc-mean()-Z
-tGravityAccelerometer.mean.X      		tGravityAcc-mean()-X
-tGravityAccelerometer.mean.Y      		tGravityAcc-mean()-Y
-tGravityAccelerometer.mean.Z      		tGravityAcc-mean()-Z
-tBodyAccelerometerJerk.mean.X     		tBodyAccJerk-mean()-X
-tBodyAccelerometerJerk.mean.Y     		tBodyAccJerk-mean()-Y
-tBodyAccelerometerJerk.mean.Z     		tBodyAccJerk-mean()-Z
-tBodyGyroscope.mean.X             		tBodyGyro-mean()-X
-tBodyGyroscope.mean.Y             		tBodyGyro-mean()-Y
-tBodyGyroscope.mean.Z             		tBodyGyro-mean()-Z
-tBodyGyroscopeJerk.mean.X         		tBodyGyroJerk-mean()-X
-tBodyGyroscopeJerk.mean.Y         		tBodyGyroJerk-mean()-Y
-tBodyGyroscopeJerk.mean.Z         		tBodyGyroJerk-mean()-Z
-tBodyAccelerometerMag.mean        		tBodyAccMag-mean()
-tGravityAccelerometerMag.mean     		tGravityAccMag-mean()
-tBodyAccelerometerJerkMag.mean    		tBodyAccJerkMag-mean()
-tBodyGyroscopeMag.mean            		tBodyGyroMag-mean()
-tBodyGyroscopeJerkMag.mean        		tBodyGyroJerkMag-mean()
-fBodyAccelerometer.mean.X         		fBodyAcc-mean()-X
-fBodyAccelerometer.mean.Y         		fBodyAcc-mean()-Y
-fBodyAccelerometer.mean.Z         		fBodyAcc-mean()-Z
-fBodyAccelerometerJerk.mean.X     		fBodyAccJerk-mean()-X
-fBodyAccelerometerJerk.mean.Y     		fBodyAccJerk-mean()-Y
-fBodyAccelerometerJerk.mean.Z     		fBodyAccJerk-mean()-Z
-fBodyGyroscope.mean.X             		fBodyGyro-mean()-X
-fBodyGyroscope.mean.Y             		fBodyGyro-mean()-Y
-fBodyGyroscope.mean.Z             		fBodyGyro-mean()-Z
-fBodyAccelerometerMag.mean        		fBodyAccMag-mean()
-fBodyBodyAccelerometerJerkMag.mean		fBodyBodyAccJerkMag-mean()
-fBodyBodyGyroscopeMag.mean        		fBodyBodyGyroMag-mean()
-fBodyBodyGyroscopeJerkMag.mean    		fBodyBodyGyroJerkMag-mean()
-tBodyAccelerometer.std.X          		tBodyAcc-std()-X
-tBodyAccelerometer.std.Y          		tBodyAcc-std()-Y
-tBodyAccelerometer.std.Z          		tBodyAcc-std()-Z
-tGravityAccelerometer.std.X       		tGravityAcc-std()-X
-tGravityAccelerometer.std.Y       		tGravityAcc-std()-Y
-tGravityAccelerometer.std.Z       		tGravityAcc-std()-Z
-tBodyAccelerometerJerk.std.X      		tBodyAccJerk-std()-X
-tBodyAccelerometerJerk.std.Y      		tBodyAccJerk-std()-Y
-tBodyAccelerometerJerk.std.Z      		tBodyAccJerk-std()-Z
-tBodyGyroscope.std.X              		tBodyGyro-std()-X
-tBodyGyroscope.std.Y              		tBodyGyro-std()-Y
-tBodyGyroscope.std.Z              		tBodyGyro-std()-Z
-tBodyGyroscopeJerk.std.X          		tBodyGyroJerk-std()-X
-tBodyGyroscopeJerk.std.Y          		tBodyGyroJerk-std()-Y
-tBodyGyroscopeJerk.std.Z          		tBodyGyroJerk-std()-Z
-tBodyAccelerometerMag.std         		tBodyAccMag-std()
-tGravityAccelerometerMag.std      		tGravityAccMag-std()
-tBodyAccelerometerJerkMag.std     		tBodyAccJerkMag-std()
-tBodyGyroscopeMag.std             		tBodyGyroMag-std()
-tBodyGyroscopeJerkMag.std         		tBodyGyroJerkMag-std()
-fBodyAccelerometer.std.X          		fBodyAcc-std()-X
-fBodyAccelerometer.std.Y          		fBodyAcc-std()-Y
-fBodyAccelerometer.std.Z          		fBodyAcc-std()-Z
-fBodyAccelerometerJerk.std.X      		fBodyAccJerk-std()-X
-fBodyAccelerometerJerk.std.Y      		fBodyAccJerk-std()-Y
-fBodyAccelerometerJerk.std.Z      		fBodyAccJerk-std()-Z
-fBodyGyroscope.std.X              		fBodyGyro-std()-X
-fBodyGyroscope.std.Y              		fBodyGyro-std()-Y
-fBodyGyroscope.std.Z              		fBodyGyro-std()-Z
-fBodyAccelerometerMag.std         		fBodyAccMag-std()
-fBodyBodyAccelerometerJerkMag.std 		fBodyBodyAccJerkMag-std()
-fBodyBodyGyroscopeMag.std         		fBodyBodyGyroMag-std()
-fBodyBodyGyroscopeJerkMag.std     		fBodyBodyGyroJerkMag-std()
+my tidy data label                |  raw data label
+----------------------------------|-----------------------------------              		
+tBodyAccelerometer.mean.X         |		tBodyAcc-mean()-X
+tBodyAccelerometer.mean.Y         |		tBodyAcc-mean()-Y
+tBodyAccelerometer.mean.Z         |		tBodyAcc-mean()-Z
+tGravityAccelerometer.mean.X      |		tGravityAcc-mean()-X
+tGravityAccelerometer.mean.Y      |		tGravityAcc-mean()-Y
+tGravityAccelerometer.mean.Z      |		tGravityAcc-mean()-Z
+tBodyAccelerometerJerk.mean.X     |		tBodyAccJerk-mean()-X
+tBodyAccelerometerJerk.mean.Y     |		tBodyAccJerk-mean()-Y
+tBodyAccelerometerJerk.mean.Z     |		tBodyAccJerk-mean()-Z
+tBodyGyroscope.mean.X             |		tBodyGyro-mean()-X
+tBodyGyroscope.mean.Y             |		tBodyGyro-mean()-Y
+tBodyGyroscope.mean.Z             |		tBodyGyro-mean()-Z
+tBodyGyroscopeJerk.mean.X         |		tBodyGyroJerk-mean()-X
+tBodyGyroscopeJerk.mean.Y         |		tBodyGyroJerk-mean()-Y
+tBodyGyroscopeJerk.mean.Z         |		tBodyGyroJerk-mean()-Z
+tBodyAccelerometerMag.mean        |		tBodyAccMag-mean()
+tGravityAccelerometerMag.mean     |		tGravityAccMag-mean()
+tBodyAccelerometerJerkMag.mean    |		tBodyAccJerkMag-mean()
+tBodyGyroscopeMag.mean            |		tBodyGyroMag-mean()
+tBodyGyroscopeJerkMag.mean        |		tBodyGyroJerkMag-mean()
+fBodyAccelerometer.mean.X         |		fBodyAcc-mean()-X
+fBodyAccelerometer.mean.Y         |		fBodyAcc-mean()-Y
+fBodyAccelerometer.mean.Z         |		fBodyAcc-mean()-Z
+fBodyAccelerometerJerk.mean.X     |		fBodyAccJerk-mean()-X
+fBodyAccelerometerJerk.mean.Y     |		fBodyAccJerk-mean()-Y
+fBodyAccelerometerJerk.mean.Z     |		fBodyAccJerk-mean()-Z
+fBodyGyroscope.mean.X             |		fBodyGyro-mean()-X
+fBodyGyroscope.mean.Y             |		fBodyGyro-mean()-Y
+fBodyGyroscope.mean.Z             |		fBodyGyro-mean()-Z
+fBodyAccelerometerMag.mean        |		fBodyAccMag-mean()
+fBodyBodyAccelerometerJerkMag.mean|		fBodyBodyAccJerkMag-mean()
+fBodyBodyGyroscopeMag.mean        |		fBodyBodyGyroMag-mean()
+fBodyBodyGyroscopeJerkMag.mean    |		fBodyBodyGyroJerkMag-mean()
+tBodyAccelerometer.std.X          |		tBodyAcc-std()-X
+tBodyAccelerometer.std.Y          |		tBodyAcc-std()-Y
+tBodyAccelerometer.std.Z          |		tBodyAcc-std()-Z
+tGravityAccelerometer.std.X       |		tGravityAcc-std()-X
+tGravityAccelerometer.std.Y       |		tGravityAcc-std()-Y
+tGravityAccelerometer.std.Z       |		tGravityAcc-std()-Z
+tBodyAccelerometerJerk.std.X      |		tBodyAccJerk-std()-X
+tBodyAccelerometerJerk.std.Y      |		tBodyAccJerk-std()-Y
+tBodyAccelerometerJerk.std.Z      |		tBodyAccJerk-std()-Z
+tBodyGyroscope.std.X              |		tBodyGyro-std()-X
+tBodyGyroscope.std.Y              |		tBodyGyro-std()-Y
+tBodyGyroscope.std.Z              |		tBodyGyro-std()-Z
+tBodyGyroscopeJerk.std.X          |		tBodyGyroJerk-std()-X
+tBodyGyroscopeJerk.std.Y          |		tBodyGyroJerk-std()-Y
+tBodyGyroscopeJerk.std.Z          |		tBodyGyroJerk-std()-Z
+tBodyAccelerometerMag.std         |		tBodyAccMag-std()
+tGravityAccelerometerMag.std      |		tGravityAccMag-std()
+tBodyAccelerometerJerkMag.std     |		tBodyAccJerkMag-std()
+tBodyGyroscopeMag.std             |		tBodyGyroMag-std()
+tBodyGyroscopeJerkMag.std         |		tBodyGyroJerkMag-std()
+fBodyAccelerometer.std.X          |		fBodyAcc-std()-X
+fBodyAccelerometer.std.Y          |		fBodyAcc-std()-Y
+fBodyAccelerometer.std.Z          |		fBodyAcc-std()-Z
+fBodyAccelerometerJerk.std.X      |		fBodyAccJerk-std()-X
+fBodyAccelerometerJerk.std.Y      |		fBodyAccJerk-std()-Y
+fBodyAccelerometerJerk.std.Z      |		fBodyAccJerk-std()-Z
+fBodyGyroscope.std.X              |		fBodyGyro-std()-X
+fBodyGyroscope.std.Y              |		fBodyGyro-std()-Y
+fBodyGyroscope.std.Z              |		fBodyGyro-std()-Z
+fBodyAccelerometerMag.std         |		fBodyAccMag-std()
+fBodyBodyAccelerometerJerkMag.std |		fBodyBodyAccJerkMag-std()
+fBodyBodyGyroscopeMag.std         |		fBodyBodyGyroMag-std()
+fBodyBodyGyroscopeJerkMag.std     |		fBodyBodyGyroJerkMag-std()
