@@ -82,6 +82,7 @@ Below I list each of the columns followed by a short definition. As described ab
 
 Key to variable naming convention:
 variables are a concatenation of the following terms: 
+
 [domain][force][measurement device][measurement type].[summary statistic][axis]
 
 [domain] in {t,d} where t = time domain and f = frequency domain
@@ -93,13 +94,20 @@ variables are a concatenation of the following terms:
 [measurement type] in {Jerk, Mag, JerkMag, blank} where Jerk is derivative of measurement, mag is magnitude and JerkMag is magnitude of jerk. 
 
 [summary statistic] in {mean,std} where mean is average and std is standard deviation
+
 [axis] in {x,y,z} representing 3-d coordinate space 
 
-Column #                      Label 	Description
+### Variable definitions
 
-1                             subject	ID for subjects. Integer from 1-30 
+In the defintions below the following data is shown in the following format: 
 
-2                            activity	Factor variable for Activity type. oded this as a six-level factor variable with level lables in the following set: 
+- column # is shown
+- column name is shown *in italics*
+- the definition of the variable follows an = sign
+ 
+1                            *subject*	= ID for subjects. Integer from 1-30 
+
+2                            *activity*	= Factor variable for Activity type, coded this as a six-level factor variable with level lables in the following set: 
 										{WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS,SITTING,STANDING,LAYING}
 
 3           *tBodyAccelerometer.mean.X*	= Mean acceleration, body motion, x-axis. See Footnote A for units
@@ -162,7 +170,7 @@ Column #                      Label 	Description
 
 32          *fBodyAccelerometerMag.mean*	= Mean magnitude of acceleration, frequency domain, body motion. See footnote A for units
 
-33 fBodyBodyAccelerometerJerkMag.mean*	= Mean magnitude of jerk (derivative of acceleration), frequency domain, body motion. See footnote A for units
+33 *fBodyBodyAccelerometerJerkMag.mean*	= Mean magnitude of jerk (derivative of acceleration), frequency domain, body motion. See footnote A for units
 
 34          *fBodyBodyGyroscopeMag.mean*	= Mean magnitude of angular velocity, frequency domain, body motion. See footnote B for units
 
