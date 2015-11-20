@@ -1,13 +1,15 @@
 # Readme.md contains description of building tidy data set from raw data 
 
- Section One: Quick Summary
+Section One: Quick Summary
+
 The raw data for the tidy dataset is from the UC Irvine Machine Learning Repository collection titled "Human Activity Recognition Using Smartphones Data Set". For more information on the raw dataset see link [here] (http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones).
 
 This readme file describes a high-level outline of the assumptiuons and steps used in run_analysis.R. This follows the assignment instructions, e.g. see [this link] (https://class.coursera.org/getdata-034/forum/thread?thread_id=157#comment-286)
 
 For information on modifying the raw data to create the derived dataset in Tidy Data format, a description of the intution of the variables and a data dictionary, please see the codebook.md file in the same GIT repository as this readme file. This readme doesn't duplicate the codebook.md. 
 
- Section Two: Assumptions
+Section Two: Assumptions
+
 The script run_analysis.R assumes the user has the following folders and files:
 
 - In a folder ..\\UCI HAR Dataset\\train\\..
@@ -15,20 +17,19 @@ The script run_analysis.R assumes the user has the following folders and files:
 - y_train.txt contains the activity codes for the training data
 - subject_train.txt contains the subject id for the training data
 
-
 - In a folder ..\\UCI HAR Dataset\\test\\..
 - x_test.txt contains the test data on the 561-element statistic vectors calculated on the raw data  
 - y_test.txt contains the test codes for the test data
 - subject_test.txt contains the subject id for the test data
 
-
 - In a folder ..\\UCI HAR Dataset\\..
 - activity_labels.txt contains descriptive names for the activities in y_train.txt and y_test.txt
 - features.txt has the column names for the files x_train.txt and x_test.txt
 
-The script assumes the user has installed the package "stringr"
+- The script assumes the user has installed the package "stringr"
 
 Section Three: Outline of Steps
+
 - Note: as stated above see codebook.md for more details
 
 -  merge training datasets into one file using cbind()
