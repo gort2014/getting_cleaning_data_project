@@ -96,6 +96,7 @@ variables are a concatenation of the following terms:
 [axis] in {x,y,z} representing 3-d coordinate space 
 
 Column #                      Label 	Description
+
 1                             subject	ID for subjects. Integer from 1-30 
 
 2                            activity	Factor variable for Activity type. oded this as a six-level factor variable with level lables in the following set: 
