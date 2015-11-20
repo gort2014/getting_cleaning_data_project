@@ -16,6 +16,9 @@ Files used:
 - activity_labels.txt contains descriptive names for the activities in y_train.txt and y_test.txt
 - features.txt has the column names for the files x_train.txt and x_test.txt
 
+Script used
+- The following details are implemented in the R script run_analysis.R.
+ 
 Step 1: Merges the training and the test sets to create one data set 
 - start with the traing data sets
 - Assemble the training files x_train.txt, y_train.txt and subject_train.txt into one training dataset
