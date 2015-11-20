@@ -81,11 +81,17 @@ Below I list each of the columns followed by a short definition. As described ab
 (http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones). See appendix below for a mapping between my intuitive naming conventions used to create a tidy dataset and the original column names used in the documetation at the link above.
 
 Key to variable naming convention:
-variables are a concatenation of the following terms: [domain][force][measurement device][measurement type].[summary statistic][axis]
+variables are a concatenation of the following terms: 
+[domain][force][measurement device][measurement type].[summary statistic][axis]
+
 [domain] in {t,d} where t = time domain and f = frequency domain
+
 [force] in {body, gravity} where acceleration is decomposed into the two 
+
 [measurement device] in {Accelerometer,Gyroscope}
+
 [measurement type] in {Jerk, Mag, JerkMag, blank} where Jerk is derivative of measurement, mag is magnitude and JerkMag is magnitude of jerk. 
+
 [summary statistic] in {mean,std} where mean is average and std is standard deviation
 [axis] in {x,y,z} representing 3-d coordinate space 
 
