@@ -171,11 +171,19 @@ columnLabels_stDevs_raw_split <- str_split_fixed(columnLabels_stDevs_raw, fixed(
 columnLabels_stDevs_adjusted <- paste(columnLabels_stDevs_raw_split[,1],
                                      columnLabels_stDevs_raw_split[,2], sep = "")
 
+
+
 ## concatenate names for mean columns and standard devistion columns
 myColumnNames <- c(columnLabels_means_adjusted, columnLabels_stDevs_adjusted)
 
 ## add on columns for "subject" and "activity"
 myColumnNames <- c("subject","activity", myColumnNames)
+
+## search and replace "Acc" with "Accelerometer"
+myColumnNames <- sub(x = myColumnNames,pattern = "Acc", replacement = "Accelerometer")
+
+## search and replace "Gyro" with "Gyroscope"
+myColumnNames <- sub(x = myColumnNames,pattern = "Gyro", replacement = "Gyroscope")
 
 ## apply the names to the dataset using the names() function
 names(df_dataSubset) <- myColumnNames
@@ -228,18 +236,25 @@ edit(df_dataFinal)
 ## now write the resulting tidy dataset to a text file
 myPath <- "C:\\andyXP\\learnings\\coursera_getData\\"
 targetFile <- paste(myPath,"my_tidy_data.txt", sep="")
-write.table(df_dataFinal,file = targetFile,sep = " ",row.name = FALSE)
+write.table(df_dataFinal,file = targetFile,sep = "\t",row.name = FALSE)
 
 
 ## test the write.table() by importing back in
-testMyFile<-read.table(file = targetFile,sep = " ",header = TRUE)
+myPath <- "C:\\andyXP\\learnings\\coursera_getData\\"
+targetFile <- paste(myPath,"my_tidy_data.txt", sep="")
+testMyFile<-read.table(file = targetFile,sep = "\t",header = TRUE)
+dim(testMyFile)
+dfTemp <- data.frame(x=names(testMyFile))
+edit(dfTemp)
 edit(testMyFile)
-
+print
 ## OPTIONAL: RUN SOME GRAPHICS TO REVIEW THE DATA
 par(mfrow = c(2,2))
-hist(testMyFile$tBodyAcc.mean.X)
-hist(testMyFile$tBodyAcc.mean.Y)
-hist(testMyFile$tBodyAcc.mean.Z)
+
+hist(testMyFile$tBodyAccelerometer.mean.X)
+hist(testMyFile$tBodyAccelerometer.mean.Y)
+hist(testMyFile$tBodyAccelerometer.mean.Z)
+
 
 ################################################################################
 ################################################################################
