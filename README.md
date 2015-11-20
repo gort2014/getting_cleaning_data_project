@@ -17,10 +17,12 @@ The script run_analysis.R assumes the user has the following folders and files:
 - y_train.txt contains the activity codes for the training data
 - subject_train.txt contains the subject id for the training data
 
+
 - In a folder ..\\UCI HAR Dataset\\test\\..
 - x_test.txt contains the test data on the 561-element statistic vectors calculated on the raw data  
 - y_test.txt contains the test codes for the test data
 - subject_test.txt contains the subject id for the test data
+
 
 - In a folder ..\\UCI HAR Dataset\\..
 - activity_labels.txt contains descriptive names for the activities in y_train.txt and y_test.txt
@@ -32,41 +34,34 @@ Section Three: Outline of Steps
 
 - Note: as stated above see codebook.md for more details
 
--  merge training datasets into one file using cbind()
+- merge training datasets into one file using cbind()
 
--  merge test datasets into one file using cbind()
+- merge test datasets into one file using cbind()
 
-- combine training and test datasets into one merged file
- since the interpretation of the columns are the same in both the training and 
- test files, combine the two into one merged file using rbind()
+- combine training and test datasets into one merged file since the interpretation of the columns are the same in both the training and test files, combine the two into one merged file using rbind()
 
-
-- We need to pick the columns of df_dataCombined that relate to a mean or stDev
- one way to do this is to pull in the features.txt file which has the column names
- features.txt indicates any column with substring ("-mean()") relates to a mean
- likewise features.txt indicates any column substring ("-std()") relates to a stdDev
-
+- We need to pick the columns of df_dataCombined that relate to a mean or stDev 
+- one way to do this is to pull in the features.txt file which has the column names
+- features.txt indicates any column with substring ("-mean()") relates to a mean
+- likewise features.txt indicates any column substring ("-std()") relates to a stdDev
 
 -  use grep() to return an index to columns in features.txt referring to "mean()"
 
 -  use grep() to return an index to columns referring to standard deviations
 
 
--  subset the combined dataframe using the column indices we created above
- don't forget to prepend the columns for "subject" and "activity"
+-  subset the combined dataframe using the column indices we created above don't forget to prepend the columns for "subject" and "activity"
 
 
--  here I will use the names in the file activity_labels.txt
- I will replace the numeric values of the data in the activity column with a
- factor variable with levels = names in activity_labels.txt
+- here I will use the names in the file activity_labels.txt
+- I will replace the numeric values of the data in the activity column with a factor variable with levels = names in activity_labels.txt
 
 -  use "labels" argument of function factor() to assign intuitive labels to activities
 
--  Appropriately labels the data set with descriptive variable names. 
-
- first grab the raw names from the features.txt file
-columnLabels_means_raw <- df_features[ colIndices_means, 2]
-columnLabels_stDevs_raw <- df_features[ colIndices_stdDev, 2]
+- appropriately label the data set with descriptive variable names. 
+- first grab the raw names from the features.txt file
+- columnLabels_means_raw <- df_features[ colIndices_means, 2]
+- columnLabels_stDevs_raw <- df_features[ colIndices_stdDev, 2]
 
 -  a lot of work has gone into making the variable  names
  but we can at least clean things up a bit
