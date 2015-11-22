@@ -1,8 +1,7 @@
 # Codebook for Getting and Cleaning Data Class Project
 
 ## Section One: Quick Summary
-This codebook is for the tidy dataset created and uploaded according to the directions for this assignment. The raw data for the tidy dataset 
-is from the UC Irvine Machine Learning Repository collection titled "Human Activity Recognition Using Smartphones Data Set". For more information on the raw dataset see link [here] (http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones). This codebook provides information on modifying the Raw Data to create the derived dataset in Tidy Data format. It also includes a description of the intution of the variables and a data dictionary.
+This codebook describes the process of creating the tidy dataset created and uploaded according to the directions for this assignment. It describes the source data and provides information on modifying the raw data to create the derived dataset in Tidy Data format, with a focus on the R script used to conduct the modifications. It also includes a description of the intution of the variables and a data dictionary of the final, modified output. The original raw data is from the UC Irvine Machine Learning Repository collection titled "Human Activity Recognition Using Smartphones Data Set". For more information on the raw dataset see link [here] (http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones). 
 
 ## Section Two: Modifying the Raw Data to Create the Tidy Data
 
@@ -17,12 +16,12 @@ Files used:
 - features.txt has the column names for the files x_train.txt and x_test.txt
 
 Script used
-- The following details are implemented in the R script run_analysis.R.
+- The following details are implemented in the R script run_analysis.R, stored in the same GIT repository as this codebook.
  
 Step 1: Merges the training and the test sets to create one data set 
 - start with the traing data sets
 - Assemble the training files x_train.txt, y_train.txt and subject_train.txt into one training dataset
-- start by looking at dimenions of files. Use the dimensions of the files with understanding of what the data represents to decide how to properly merge.
+- start by looking at dimenions of files. Use the dimensions of the files along with an understanding of what the data represents to decide how to properly merge.
 - dimensions of x_train.txt is 7352 x 561 
 - dimensions of y_train.txt is  7352 x 1
 - dimensions of subject_train.txt is  7352 x 1
@@ -56,11 +55,10 @@ Step 3: Uses descriptive activity names to name the activities in the data set
 Step 4: Appropriately label the data set with descriptive variable names.   
 - this is effectively asking to improve on the variable names in the features.txt file. Give it a shot!
 
-- According the the principles of tidy data, I have changed the labels in the raw data to make them more readable. I changed the names for the columns representing variables related to acceleration to contain the substring "Accelerometer". The units for all of these columns are in standard gravity units 'g'. This is also shown for each column below in the data dictionary. I have labeled the columns representing variables related to angular velocity so that the label contains the substring "Gyroscope". The units for all of these columns are in radians/second. This is shown for each column below in the data dictionary. Note: See the appendix below for a mapping between my intuitive naming conventions used to create a tidy dataset and the original column names used in the documetation at the link above.
+- According the the principles of tidy data, I have changed the labels in the raw data to make them more readable. I changed the names for the columns representing variables related to acceleration to contain the substring "Accelerometer". The units for all of these columns are in standard gravity units 'g'. I have labeled the columns representing variables related to angular velocity so that the label contains the substring "Gyroscope". The units for all of these columns are in radians/second. Note: See the appendix below for a mapping between my intuitive naming conventions used to create a tidy dataset and the original column names used in the documetation at the link above.
 
 section 5: From the data set in step 4, create a second, independent tidy data set with the average of each variable for each activity and each subject.
-- To quote from the assignment, the dataset must contain "the average of each variable for each activity and each subject," 
-where the average and standard deviations are calculated from the raw dataset. As such, each row in the tidy dataset represents a unique {subject, activity} pair. There are 30 unique subjects and 6 unique activties, therefore there are 30 x 6 = 180 unique rows representing the unique {subject, activity} pairs.	
+- To quote from the assignment, the dataset must contain "the average of each variable for each activity and each subject," where the average and standard deviations are calculated from the raw dataset. As such, each row in the tidy dataset represents a unique {subject, activity} pair. There are 30 unique subjects and 6 unique activties, therefore there are 30 x 6 = 180 unique rows representing the unique {subject, activity} pairs.	
 
 - Grouping by the 180 unique {subject, activity} pairs, calculate the mean and standard deviation of each of the 68 columns (66 columns with variable measurements on mean and standard deviation plus the subject column and the activity column). This is the final dataset
 

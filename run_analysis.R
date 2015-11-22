@@ -118,13 +118,14 @@ colIndices_stdDev <- grep("-std()",df_features[,2])
 length(colIndices_stdDev) 
 df_features[colIndices_stdDev,2] ## review the vector of names referring to stdDevs
 
+dfTemp <- data.frame(x = df_features[colIndices_stdDev,2])
 ## subset the combined dataframe using the column indices we created above
 ## don't forget to prepend the columns for "subject" and "activity"
 df_dataSubset <- df_dataCombined[,c(colSubject,colActivity,colIndices_means,colIndices_stdDev)]
 dim(df_dataSubset)
 head(df_dataSubset)
 str(df_dataSubset)
-
+##edit(df_dataSubset)
 ###############################################################################
 ###############################################################################
 ## Beginning step three of assignment
@@ -185,6 +186,9 @@ myColumnNames <- sub(x = myColumnNames,pattern = "Acc", replacement = "Accelerom
 ## search and replace "Gyro" with "Gyroscope"
 myColumnNames <- sub(x = myColumnNames,pattern = "Gyro", replacement = "Gyroscope")
 
+## search and replace "-" with "."
+myColumnNames <- gsub(x = myColumnNames,pattern = "-", replacement = ".",fixed = TRUE)
+
 ## apply the names to the dataset using the names() function
 names(df_dataSubset) <- myColumnNames
 head(df_dataSubset)
@@ -200,6 +204,7 @@ object.size(df_dataSubset)
 
 ## create and index of {subject, activity} pairings per the assignment
 ## there will be 30 subjects x 6 activities = 180 pairings
+table(df_dataSubset$subject,df_dataSubset$activity)
 myGroups <- paste(df_dataSubset$subject, "_", df_dataSubset$activity, sep="")
 
 ## use aggregate() function to apply average of each column by the 180
@@ -247,7 +252,7 @@ dim(testMyFile)
 dfTemp <- data.frame(x=names(testMyFile))
 edit(dfTemp)
 edit(testMyFile)
-print
+
 ## OPTIONAL: RUN SOME GRAPHICS TO REVIEW THE DATA
 par(mfrow = c(2,2))
 
