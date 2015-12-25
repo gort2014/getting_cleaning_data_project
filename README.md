@@ -86,3 +86,5 @@ The script run_analysis.R assumes the user has the following folders and files:
 
 -  use aggregate() function to apply average of each column by the 180
  {subject, activity} pairing groups across alll columns
+
+testing changes 20151225
