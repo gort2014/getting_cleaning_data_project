@@ -277,3 +277,4 @@ hist(testMyFile$tBodyAccelerometer.mean.Z)
 ## we don't want the "meanFreq()"
 
 
+## testing change
